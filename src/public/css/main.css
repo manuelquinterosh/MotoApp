@@ -1,0 +1,39 @@
+body {
+    background: #36383a;
+}
+
+.logo {
+    width: 30%;
+}
+
+.text {
+    color: aliceblue;
+}
+
+.moto{
+    height:70px;
+    width:70px;
+    display: block;
+    margin: auto;
+}
+
+.motobaner {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
+  .verde {
+    background: #0bd816;
+  }
+
+  .spacing {
+    margin: 20px;
+  }
+
+  .rojo {
+    background: #f00606;
+  }
+
+ 

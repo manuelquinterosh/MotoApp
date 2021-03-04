@@ -1,0 +1,71 @@
+<h1 class="text">Available Motorcycles</h1>
+<div class="row">
+    
+    {{#each motos}}
+    <div class="col-md-3 p-1 spacing">
+        {{#if status}}
+
+        <div class="rojo card" style="width: 18rem;">
+            <img class="card-img-top moto" src="img/moto.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title  text">{{title}}</h5>
+
+                <a href="/motos/return/{{_id}}" class="btn btn-primary"><i class="fa fa-lock">Return</i></a>
+            </div>
+        </div>
+
+        {{else}}
+
+
+
+        <div class="verde card" style="width: 18rem;">
+            <img class="card-img-top moto" src="img/moto.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text">{{title}}</h5>
+
+                <a href="/motos/rent/{{_id}}" class="btn btn-primary"><i class="fa fa-unlock">Rent</i></a>
+            </div>
+        </div>
+
+        {{/if}}
+    </div>
+    {{/each}}
+</div>
+
+<h1 class="text">My rented Motorcycles</h1>
+
+<div class="row">
+    {{#each allmotos}}
+    <div class="col-md-3 p-1 spacing">
+        {{#if status}}
+
+        <div class="rojo card" style="width: 18rem;">
+            <img class="card-img-top moto" src="img/moto.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text">{{title}}</h5>
+
+                <a href="/motos/return/{{_id}}" class="btn btn-primary"><i class="fa fa-lock">Return</i></a>
+            </div>
+        </div>
+
+        {{else}}
+
+
+
+        <div class="verde card" style="width: 18rem;">
+            <img class="card-img-top moto" src="img/moto.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text">{{title}}</h5>
+
+                <a href="/motos/rent/{{_id}}" class="btn btn-primary"><i class="fa fa-unlock">Rent</i></a>
+            </div>
+        </div>
+
+
+        {{/if}}
+
+    </div>
+    {{/each}}
+
+</div>
+</div>
